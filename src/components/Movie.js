@@ -56,7 +56,8 @@ const Movie = (props) => {
 
 const mapProps = state => {
     return {
-        movies: state.movie.movies
+        movies: state.movie.movies,
+        showFavorites: state.fave.showFavorites 
     }
 }
 
