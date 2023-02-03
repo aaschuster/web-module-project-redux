@@ -56,7 +56,7 @@ const Movie = (props) => {
 
 const mapProps = state => {
     return {
-        movies: state.movies
+        movies: state.movie.movies
     }
 }
 

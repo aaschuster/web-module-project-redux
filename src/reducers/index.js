@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
 import movieReducer from './movieReducer';
+import faveReducer from './faveReducer';
 
-export const reducer = combineReducers({
-    movie: movieReducer
+const reducer = combineReducers({
+    movie: movieReducer,
+    fave: faveReducer
 })
 
-export default movieReducer;
+export default reducer;
