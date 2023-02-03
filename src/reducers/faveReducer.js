@@ -17,7 +17,7 @@
             }
         case REMOVE_FAVORITE:
             return {
-
+                ...state, favorites:state.favorites.filter(item=>action.payload !== item.id)
             }
         default: return state;
     }
