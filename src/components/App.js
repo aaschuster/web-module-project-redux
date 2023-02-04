@@ -46,10 +46,6 @@ const App = props => {
   );
 };
 
-const mapProps = state => {
-  return {
-    showFavorites: state.fave.showFavorites
-  }
-}
+const mapProps = state => {return {showFavorites: state.fave.showFavorites}}
 
 export default connect(mapProps, {})(App);

@@ -21,11 +21,7 @@ const FavoriteMovieList = (props) => {
     </div>);
 }
 
-const mapProps = state => {
-    return {
-        favorites: state.fave.favorites
-    }
-}
+const mapProps = state => {return {favorites: state.fave.favorites}}
 
 
 export default connect(mapProps, {removeFavorite})(FavoriteMovieList);
